@@ -85,6 +85,10 @@ class UserService {
     }
   }
 
+  public getAllUsers(): Omit<UserRecord, 'passwordHash'>[] {
+    return Array.from(this.userDatabase.values()).map(({ passwordHash, ...user }) => user);
+  }
+
   public count(): number {
     return this.userDatabase.size;
   }

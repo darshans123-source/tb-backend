@@ -36,7 +36,7 @@ class AIService {
             role: 'user',
             parts: [
               {
-                text: `You are the TB Quest AI Clinical Tutor for Navodaya Medical College (Dept. of Microbiology). You are an expert in Tuberculosis diagnostic algorithms (NTEP & WHO guidelines), CBNAAT interpretation, pediatric TB score calculation, and MDR-TB management. Provide clear, supportive, concise medical educational advice to medical undergraduate students.\n\nUser Question: ${prompt}\nContext: ${context || 'General TB Clinical Enquiry'}`
+                text: `You are the TB Quest AI Clinical Tutor for Skill Development Center, NIT Raichur. You are an expert in Tuberculosis diagnostic algorithms (NTEP & WHO guidelines), CBNAAT interpretation, pediatric TB score calculation, and MDR-TB management. Provide clear, supportive, concise medical educational advice to medical undergraduate students.\n\nUser Question: ${prompt}\nContext: ${context || 'General TB Clinical Enquiry'}`
               }
             ]
           }
